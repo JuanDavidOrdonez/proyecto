@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* index */
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: rgba(14, 1, 1, 0.419); */
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+.indextext{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.875);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.caja-section{
+    width: 400px;
+    height: 350px;
+    background-color: rgb(3, 146, 255);
+    border: solid 3px black;
+    background-image: url(../img/noti.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+.padre{
+    display: flex;
+    background-color: bisque;
+}
+
+header{
+    background-color: rgb(55, 129, 175);
+
+    border: solid 3px black;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.caja-section2{
+    width: 400px;
+    height: 350px;
+    background-color: aqua;
+    border: solid 3px black;
+    background-image: url(../img/index2.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+.caja-section3{
+    width: 400px;
+    height: 350px;
+    background-color: aqua;
+    border: solid 3px black;
+    background-image: url(../img/index3.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+.titulo{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+}
+
+.titulo2{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(61, 182, 0);
+}
+
+.titulo3{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(230, 0, 251);
+}
+
+h1{
+    font-size: 4em;
+}
+/* 
+.portada{
+    background-image: url(../img/fondo.jpg);
+    height: 98vh;
+} */
+
+/* noticias */
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: rgba(14, 1, 1, 0.419); */
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-evenly;
+}
+
+.caja{
+    width: 400px;
+    height: 300px;;
+    background-color: red;
+    border: solid 3px black;
+    /* background-image: url(../img/sevan.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-evenly; */
+}
+
+.caja2{
+    width: 400px;
+    height: 300px;;
+    background-color: rgb(255, 123, 0);
+    border: solid 3px black;
+}
+
+.caja3{
+    width: 400px;
+    height: 300px;;
+    background-color: rgb(43, 255, 0);
+    border: solid 3px black;
+}
+
+.titulo1{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.568);
+    border-radius: 20px;
+}
+
+
+.subtitulo1{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(141, 4, 183, 0.649);
+}
+
+.subtitulo2{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgba(183, 114, 4, 0.649);
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-direction: row;
+}
+
+.subtitulo3{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgba(69, 180, 0, 0.508);
+    border-radius: 20px;
+}
+
+/* juegos */
+
+.juego-titulo{
+    background-color: brown;
+    font-size: 3em;
+    width: 200%;
+    border: solid 3px black;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.juegos-titulo2{
+    font-size: 2em;
+}
+
+.juegos-titulo3{
+    font-size: 2em;
+}
+
+.texto{
+    font-size: 20px;
+}
+
+/* quejas */
+
+main section div h2{
+    flex-direction: row;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: darkslateblue;
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+}
+
+.section-quejas{
+    background-color: aqua;
+    width: 100%;
+}
+
+
+/* footer */
+
+footer{
+    background-color: cadetblue;
+    width: 100%;
+    border: solid 3px black;
+    /* background-image: url(../img/footer.jpg); */
+}
+
+.comtnenedorparam{
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}

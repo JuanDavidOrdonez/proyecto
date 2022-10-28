@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>proyecto pre-entrga</title>
+</head>
+
+<body>
+    <header>
+        <h1>Juan proyecto</h1>
+        <nav>
+            <ul class="padre">
+                <li> <a href="../index.html">inicio</a></li>
+                <li> <a href="./noticias.html">noticias</a> </li>
+                <li> <a href="./Sports.html">Sports</a> </li>
+                <li> <a href="./juegos.html">juegos</a> </li>
+                <li>quejas</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor2">
+        <section class="section-quejas">
+            <div>
+                <h2>quejas</h2>
+            </div>
+        </section>
+
+        <section>
+            <form action="">
+
+                <div>
+                    <label for="nombre-usuario">Nombre y Apeliido</label>
+                    <input type="text" name="nombre" id="nombre-usuario" placeholder="Nombre y Apellido" required>
+                </div>
+
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div>
+                    <label for="">quejas</label>
+                    <select name="quejas" id="">
+                        <option value="Consultas">Consultas</option>
+                        <option value="reclamos">sugerencias</option>
+                        <option value="sugerencias">reclamos</option>
+                        <option value="error">error</option>
+                        <option value="daños">daños</option>
+                        <option value="otros">otros</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Mensaje de la queja</label>
+                    <textarea name="Mensaje-queja" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <span>Genero:</span required>
+
+                    <label for="">Hombre</label>
+                    <input type="radio" name="Genero" value="Hombre">
+
+                    <label for="">Mujer</label>
+                    <input type="radio" name="Genero" value="Mujer">
+
+                    <label for="">otro</label>
+                    <input type="radio" name="Genero" value="otro">
+                </div>
+
+                <div>
+                    <label for="">¿quiere tener todas las novedades?</label>
+                    <input type="checkbox" name="novedades" value="si-novedades">
+                </div>
+
+                <input type="submit" value="Enviar">
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+    <footer class="comtnenedorparam">
+        <div>
+            <h3>compañia</h3>
+            <nav>
+                <ul>
+                    <li>servicios</li>
+                    <li>contacto</li>
+                    <li>preguntas frecuentes</li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div>
+            <h3>redes sociales</h3>
+            <nav>
+                <ul>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                    <li>twitter</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
