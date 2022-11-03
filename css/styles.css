@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* index */
@@ -10,12 +11,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 99vh;
     width: 100%;
-    background-image: url(../img/fondo2.jpg);
     background-position: center;
     background-size: cover;
     justify-content: space-around;
+    background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
 }
 
 .indextext{
@@ -23,7 +24,7 @@
     color: rgba(0, 0, 0, 0.875);
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: rgba(255, 255, 255, 0.333);
 }
 
 .caja-section{
@@ -50,6 +51,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 15px;
 }
 
 .caja-section2{
@@ -87,7 +89,7 @@ header{
     color: rgb(0, 0, 0);
     width: 100%;
     text-align: center;
-    background-color: rgb(61, 182, 0);
+    background-color: rgba(61, 182, 0, 0.836);
 }
 
 .titulo3{
@@ -95,11 +97,60 @@ header{
     color: rgb(0, 0, 0);
     width: 100%;
     text-align: center;
-    background-color: rgb(230, 0, 251);
+    background-color: rgba(230, 0, 251, 0.833);
 }
 
 h1{
     font-size: 4em;
+}
+
+@media(min-width: 375px) and (max-width:1200px){
+    .contenedor{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-position: center;
+        background-size: cover;
+        justify-content: space-around;
+        background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
+    }
+    .caja-section{
+        width: 300px;
+        height: 300px;
+    }
+
+    .caja-section2{
+        width: 300px;
+        height: 300px;
+    }
+
+    .caja-section3{
+        width: 300px;
+        height: 300px;
+    }
+
+    header{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .titulo{
+        font-size: 1.5em;
+    }
+
+    .titulo2{
+        font-size: 1.5em;
+    }
+
+    .titulo3{
+        font-size: 1.5em;
+    }
+
+    .indextext{
+        font-size: 1.5rem;
+    }
 }
 
 /* noticias */
@@ -163,19 +214,51 @@ h1{
     background-color: rgba(183, 114, 4, 0.649);
 }
 
-.texto{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
+/* .texto{
+    font-size: 0.5rem;
     text-align: center;
-    flex-direction: row;
-}
+    background-color: rgba(167, 7, 138, 0.262);
+    height: 100px;
+} */
 
 .subtitulo3{
     font-size: 1.5rem;
     text-align: center;
     background-color: rgba(69, 180, 0, 0.508);
     border-radius: 20px;
+}
+
+@media(min-width: 375px){
+    .titulo1{
+        font-size: 2.5em;
+    }
+
+    .caja{
+        width: 300px;
+        height: 300px;
+    }
+
+    .caja2{
+        width: 300px;
+        height: 300px;
+    }
+
+    .caja3{
+        width: 300px;
+        height: 300px;
+    }
+
+    .subtitulo1{
+        font-size: 1.5em;
+    }
+
+    .subtitulo2{
+        font-size: 1.5em;
+    }
+
+    .subtitulo3{
+        font-size: 1.5em;
+    }
 }
 
 /* juegos */
