@@ -49,6 +49,13 @@ ul{
 .padre{
     display: flex;
     background-color: bisque;
+    gap: 2px;
+}
+
+@media(min-width: 375px) and (max-width: 500px){
+    .padre{
+        gap: 5px;
+    }
 }
 
 header{
@@ -256,6 +263,14 @@ h1{
     }
 }
 
+/* sports */
+
+@media(min-width: 375px){
+    .titulo-sports{
+        font-size: 1.5em;
+    }
+}
+
 /* juegos */
 
 .contenedor3{
@@ -265,8 +280,10 @@ h1{
 
     .todo{
         display: grid;
-        grid-template-columns: repeat(2, 45%);
-        grid-template-rows: repeat(4, 25vh);
+        grid-template-columns: repeat(3, 35%);
+        grid-template-rows: repeat(4, 70vh);
+        line-height: 40px;
+        justify-content: end;
     }
 
 
@@ -278,20 +295,45 @@ h1{
 
 .juegos-titulo2{
     font-size: 2em;
+    height: min-content;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.568);
+    border-radius: 20px;
 }
 
 .juegos-titulo3{
     font-size: 2em;
+    height: min-content;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.568);
+    border-radius: 20px;
 }
 
 .texto{
-    font-size: 20px;
+    font-size: 1.1em;
+    height: max-content;
+    /* text-align: center; */
+    border-radius: 10px;
+    line-height: 20px;
+    background-color: rgba(128, 128, 128, 0.568)
 }
 
 
     .img-juegos{
-        width: 90%;
-        height: 35vh;
+        width: 500px;
+        height: 300px;
+    }
+
+    @media(min-width: 375px) and (max-width: 1200px){
+        .contenedor3{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .juegos-titulo{
+            font-size: 1.5em;
+        }
     }
 
 /* quejas */
