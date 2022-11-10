@@ -327,13 +327,28 @@ h1{
     @media(min-width: 375px) and (max-width: 1200px){
         .contenedor3{
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
         }
 
         .juegos-titulo{
             font-size: 1.5em;
         }
+
+        .todo{
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-position: center;
+            background-size: cover;
+            justify-content: space-around;
+        }
+
+        .img-juegos{
+            width: 370px;
+            height: 250px;
+        }
+
     }
 
 /* quejas */
