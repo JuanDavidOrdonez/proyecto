@@ -1,0 +1,31 @@
+main section div h2{
+    flex-direction: row;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: darkslateblue;
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+}
+
+.section-quejas{
+    background-color: aqua;
+    width: 100%;
+}
+
+footer{
+    background-color: cadetblue;
+    width: 100%;
+    border: solid 3px black;
+    /* background-image: url(../img/footer.jpg); */
+}
+
+.comtnenedorparam{
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}

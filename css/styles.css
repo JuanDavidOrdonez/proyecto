@@ -1,389 +1,403 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 99vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
+  background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
 }
 
-a{
-    text-decoration: none;
+.indextext {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.875);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.333);
 }
 
-ul{
-    list-style: none;
+.caja-section {
+  width: 400px;
+  height: 350px;
+  background-color: rgb(3, 146, 255);
+  border: solid 3px black;
+  background-image: url(../img/noti.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
 }
 
-/* index */
+.padre {
+  display: flex;
+  background-color: bisque;
+  gap: 2px;
+}
 
-.contenedor{
+@media (min-width: 375px) and (max-width: 500px) {
+  .padre {
+    gap: 5px;
+  }
+}
+header {
+  background-color: rgb(55, 129, 175);
+  border: solid 3px black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.caja-section2 {
+  width: 400px;
+  height: 350px;
+  background-color: aqua;
+  border: solid 3px black;
+  background-image: url(../img/index2.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
+}
+
+.caja-section3 {
+  width: 400px;
+  height: 350px;
+  background-color: aqua;
+  border: solid 3px black;
+  background-image: url(../img/index3.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
+}
+
+.titulo {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  background-color: rgb(128, 128, 128);
+}
+
+.titulo2 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(61, 182, 0, 0.836);
+}
+
+.titulo3 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(230, 0, 251, 0.833);
+}
+
+h1 {
+  font-size: 4em;
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
+  .contenedor {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 99vh;
-    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     background-position: center;
     background-size: cover;
     justify-content: space-around;
     background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
-}
-
-.indextext{
-    font-size: 2em;
-    color: rgba(0, 0, 0, 0.875);
-    width: 100%;
+  }
+  .caja-section {
+    width: 300px;
+    height: 300px;
+  }
+  .caja-section2 {
+    width: 300px;
+    height: 300px;
+  }
+  .caja-section3 {
+    width: 300px;
+    height: 300px;
+  }
+  header {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.333);
+    font-size: 1em;
+  }
+  .titulo {
+    font-size: 1.5em;
+  }
+  .titulo2 {
+    font-size: 1.5em;
+  }
+  .titulo3 {
+    font-size: 1.5em;
+  }
+  .indextext {
+    font-size: 1.5rem;
+  }
+}
+footer {
+  background-color: cadetblue;
+  width: 100%;
+  border: solid 3px black;
+  /* background-image: url(../img/footer.jpg); */
 }
 
-.caja-section{
-    width: 400px;
-    height: 350px;
-    background-color: rgb(3, 146, 255);
-    border: solid 3px black;
-    background-image: url(../img/noti.jpg);
-    background-position: center;
-    background-size: cover;
-    justify-content: space-around;
+.comtnenedorparam {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
 }
 
-.padre{
+.contenedor3 {
+  display: grid;
+  background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(4, 70vh);
+  line-height: 40px;
+  justify-content: end;
+}
+
+.juegos-titulo {
+  background-color: brown;
+  font-size: 3em;
+  border: solid 3px black;
+}
+
+.juegos-titulo2 {
+  font-size: 2em;
+  height: min-content;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.568);
+  border-radius: 20px;
+}
+
+.juegos-titulo3 {
+  font-size: 2em;
+  height: min-content;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.568);
+  border-radius: 20px;
+}
+
+.texto {
+  font-size: 1.1em;
+  height: max-content;
+  /* text-align: center; */
+  border-radius: 10px;
+  line-height: 20px;
+  background-color: rgba(128, 128, 128, 0.568);
+}
+
+.img-juegos {
+  width: 500px;
+  height: 300px;
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
+  .contenedor3 {
     display: flex;
-    background-color: bisque;
-    gap: 2px;
-}
-
-@media(min-width: 375px) and (max-width: 500px){
-    .padre{
-        gap: 5px;
-    }
-}
-
-header{
-    background-color: rgb(55, 129, 175);
-
-    border: solid 3px black;
-
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.caja-section2{
-    width: 400px;
-    height: 350px;
-    background-color: aqua;
-    border: solid 3px black;
-    background-image: url(../img/index2.jpg);
+  }
+  .juegos-titulo {
+    font-size: 1.5em;
+  }
+  .todo {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     background-position: center;
     background-size: cover;
     justify-content: space-around;
+  }
+  .img-juegos {
+    width: 370px;
+    height: 250px;
+  }
+}
+footer {
+  background-color: cadetblue;
+  width: 100%;
+  border: solid 3px black;
+  /* background-image: url(../img/footer.jpg); */
 }
 
-.caja-section3{
-    width: 400px;
-    height: 350px;
-    background-color: aqua;
-    border: solid 3px black;
-    background-image: url(../img/index3.jpg);
-    background-position: center;
-    background-size: cover;
-    justify-content: space-around; 
+.comtnenedorparam {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
 }
 
-.titulo{
-    font-size: 2em;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    text-align: center;
-    background-color: rgb(128, 128, 128);
+.caja {
+  width: 400px;
+  height: 300px;
+  background-color: red;
+  border: solid 3px black;
+  align-content: stretch;
 }
 
-.titulo2{
-    font-size: 2em;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    text-align: center;
-    background-color: rgba(61, 182, 0, 0.836);
+.caja2 {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(255, 123, 0);
+  border: solid 3px black;
 }
 
-.titulo3{
-    font-size: 2em;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    text-align: center;
-    background-color: rgba(230, 0, 251, 0.833);
+.caja3 {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(43, 255, 0);
+  border: solid 3px black;
 }
 
-h1{
-    font-size: 4em;
+.titulo1 {
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: min-content;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.568);
+  border-radius: 20px;
 }
 
-@media(min-width: 375px) and (max-width:1200px){
-    .contenedor{
-        display: flex;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        background-position: center;
-        background-size: cover;
-        justify-content: space-around;
-        background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
-    }
-    .caja-section{
-        width: 300px;
-        height: 300px;
-    }
-
-    .caja-section2{
-        width: 300px;
-        height: 300px;
-    }
-
-    .caja-section3{
-        width: 300px;
-        height: 300px;
-    }
-
-    header{
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .titulo{
-        font-size: 1.5em;
-    }
-
-    .titulo2{
-        font-size: 1.5em;
-    }
-
-    .titulo3{
-        font-size: 1.5em;
-    }
-
-    .indextext{
-        font-size: 1.5rem;
-    }
+.subtitulo1 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(141, 4, 183, 0.649);
 }
 
-/* noticias */
-
-.caja{
-    width: 400px;
-    height: 300px;;
-    background-color: red;
-    border: solid 3px black;
-    align-content: stretch;
+.subtitulo2 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgba(183, 114, 4, 0.649);
 }
 
-.caja2{
-    width: 400px;
-    height: 300px;;
-    background-color: rgb(255, 123, 0);
-    border: solid 3px black;
+.subtitulo3 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgba(69, 180, 0, 0.508);
+  border-radius: 20px;
 }
 
-.caja3{
-    width: 400px;
-    height: 300px;;
-    background-color: rgb(43, 255, 0);
-    border: solid 3px black;
+@media (min-width: 375px) {
+  .titulo1 {
+    font-size: 2.5em;
+  }
+  .caja {
+    width: 300px;
+    height: 300px;
+  }
+  .caja2 {
+    width: 300px;
+    height: 300px;
+  }
+  .caja3 {
+    width: 300px;
+    height: 300px;
+  }
+  .subtitulo1 {
+    font-size: 1.5em;
+  }
+  .subtitulo2 {
+    font-size: 1.5em;
+  }
+  .subtitulo3 {
+    font-size: 1.5em;
+  }
+}
+/* sports */
+@media (min-width: 375px) {
+  .titulo-sports {
+    font-size: 1.5em;
+  }
+}
+footer {
+  background-color: cadetblue;
+  width: 100%;
+  border: solid 3px black;
+  /* background-image: url(../img/footer.jpg); */
 }
 
-.titulo1{
-    font-size: 3em;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    height: min-content;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0.568);
-    border-radius: 20px;
-}
-
-
-.subtitulo1{
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    text-align: center;
-    background-color: rgba(141, 4, 183, 0.649);
-}
-
-.subtitulo2{
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: rgba(183, 114, 4, 0.649);
-}
-
-/* .texto{
-    font-size: 0.5rem;
-    text-align: center;
-    background-color: rgba(167, 7, 138, 0.262);
-    height: 100px;
-} */
-
-.subtitulo3{
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: rgba(69, 180, 0, 0.508);
-    border-radius: 20px;
-}
-
-@media(min-width: 375px){
-    .titulo1{
-        font-size: 2.5em;
-    }
-
-    .caja{
-        width: 300px;
-        height: 300px;
-    }
-
-    .caja2{
-        width: 300px;
-        height: 300px;
-    }
-
-    .caja3{
-        width: 300px;
-        height: 300px;
-    }
-
-    .subtitulo1{
-        font-size: 1.5em;
-    }
-
-    .subtitulo2{
-        font-size: 1.5em;
-    }
-
-    .subtitulo3{
-        font-size: 1.5em;
-    }
+.comtnenedorparam {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
 }
 
 /* sports */
-
-@media(min-width: 375px){
-    .titulo-sports{
-        font-size: 1.5em;
-    }
+@media (min-width: 375px) {
+  .titulo-sports {
+    font-size: 1.5em;
+  }
+}
+footer {
+  background-color: cadetblue;
+  width: 100%;
+  border: solid 3px black;
+  /* background-image: url(../img/footer.jpg); */
 }
 
-/* juegos */
-
-.contenedor3{
-    display: grid;
-    background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
+.comtnenedorparam {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
 }
 
-    .todo{
-        display: grid;
-        grid-template-columns: repeat(3, 35%);
-        grid-template-rows: repeat(4, 70vh);
-        line-height: 40px;
-        justify-content: end;
-    }
-
-
-.juegos-titulo{
-    background-color: brown;
-    font-size: 3em;
-    border: solid 3px black;
+main section div h2 {
+  flex-direction: row;
 }
 
-.juegos-titulo2{
-    font-size: 2em;
-    height: min-content;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0.568);
-    border-radius: 20px;
+.contenedor2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: darkslateblue;
+  height: 100vh;
+  width: 100%;
+  font-size: 20px;
 }
 
-.juegos-titulo3{
-    font-size: 2em;
-    height: min-content;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0.568);
-    border-radius: 20px;
+.section-quejas {
+  background-color: aqua;
+  width: 100%;
 }
 
-.texto{
-    font-size: 1.1em;
-    height: max-content;
-    /* text-align: center; */
-    border-radius: 10px;
-    line-height: 20px;
-    background-color: rgba(128, 128, 128, 0.568)
+footer {
+  background-color: cadetblue;
+  width: 100%;
+  border: solid 3px black;
+  /* background-image: url(../img/footer.jpg); */
 }
 
-
-    .img-juegos{
-        width: 500px;
-        height: 300px;
-    }
-
-    @media(min-width: 375px) and (max-width: 1200px){
-        .contenedor3{
-            display: flex;
-        }
-
-        .juegos-titulo{
-            font-size: 1.5em;
-        }
-
-        .todo{
-            display: flex;
-            height: auto;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            background-position: center;
-            background-size: cover;
-            justify-content: space-around;
-        }
-
-        .img-juegos{
-            width: 370px;
-            height: 250px;
-        }
-
-    }
-
-/* quejas */
-
-main section div h2{
-    flex-direction: row;
+.comtnenedorparam {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
 }
 
-.contenedor2{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: darkslateblue;
-    height: 100vh;
-    width: 100%;
-    font-size: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section-quejas{
-    background-color: aqua;
-    width: 100%;
+a {
+  text-decoration: none;
 }
 
-
-/* footer */
-
-footer{
-    background-color: cadetblue;
-    width: 100%;
-    border: solid 3px black;
-    /* background-image: url(../img/footer.jpg); */
+ul {
+  list-style: none;
 }
 
-.comtnenedorparam{
-    justify-content: space-between;
-    flex-direction: row;
-    display: flex;
-}
+/*# sourceMappingURL=styles.css.map */
