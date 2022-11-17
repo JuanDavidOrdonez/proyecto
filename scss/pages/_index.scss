@@ -27,11 +27,12 @@
     background-position: center;
     background-size: cover;
     justify-content: space-around;
+    box-shadow: $sombra;
 }
 
 .padre {
     display: flex;
-    background-color: bisque;
+    background-color: rgb(243, 186, 159);
     gap: 2px;
 }
 
@@ -60,6 +61,7 @@ header {
     background-position: center;
     background-size: cover;
     justify-content: space-around;
+    box-shadow: $sombra;
 }
 
 .caja-section3 {
@@ -71,6 +73,7 @@ header {
     background-position: center;
     background-size: cover;
     justify-content: space-around;
+    box-shadow: $sombra;
 }
 
 .titulo {
@@ -97,9 +100,7 @@ header {
     background-color: rgba(230, 0, 251, 0.833);
 }
 
-h1 {
-    font-size: 4em;
-}
+
 
 @media(min-width: 375px) and (max-width:1200px) {
     .contenedor {

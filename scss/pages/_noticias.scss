@@ -1,26 +1,32 @@
-.caja{
+.caja {
     width: 400px;
-    height: 300px;;
+    height: 300px;
+    ;
     background-color: $color-primario;
     border: solid 3px black;
     align-content: stretch;
+    box-shadow: $sombra;
 }
 
-.caja2{
+.caja2 {
     width: 400px;
-    height: 300px;;
+    height: 300px;
+    ;
     background-color: $color-primario;
     border: solid 3px black;
+    box-shadow: $sombra;
 }
 
-.caja3{
+.caja3 {
     width: 400px;
-    height: 300px;;
+    height: 300px;
+    ;
     background-color: $color-primario;
     border: solid 3px black;
+    box-shadow: $sombra;
 }
 
-.titulo1{
+.titulo1 {
     font-size: 3em;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -31,7 +37,7 @@
 }
 
 
-.subtitulo1{
+.subtitulo1 {
     font-size: 2rem;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -39,67 +45,77 @@
     background-color: rgba(141, 4, 183, 0.649);
 }
 
-.subtitulo2{
+.subtitulo2 {
     font-size: 1.5rem;
     text-align: center;
     background-color: rgba(183, 114, 4, 0.649);
 }
 
-.subtitulo3{
+.subtitulo3 {
     font-size: 1.5rem;
     text-align: center;
     background-color: rgba(69, 180, 0, 0.508);
     border-radius: 20px;
 }
 
-@media(min-width: 375px){
-    .titulo1{
+.texto-noti {
+    font-size: 1.1em;
+    width: 300px;
+    height: max-content;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 20px;
+    background-color: rgba(128, 128, 128, 0.568)
+}
+
+@media(min-width: 375px) {
+    .titulo1 {
         font-size: 2.5em;
     }
 
-    .caja{
+    .caja {
         width: 300px;
         height: 300px;
     }
 
-    .caja2{
+    .caja2 {
         width: 300px;
         height: 300px;
     }
 
-    .caja3{
+    .caja3 {
         width: 300px;
         height: 300px;
     }
 
-    .subtitulo1{
+    .subtitulo1 {
         font-size: 1.5em;
     }
 
-    .subtitulo2{
+    .subtitulo2 {
         font-size: 1.5em;
     }
 
-    .subtitulo3{
+    .subtitulo3 {
         font-size: 1.5em;
     }
 }
 
 /* sports */
 
-@media(min-width: 375px){
-    .titulo-sports{
+@media(min-width: 375px) {
+    .titulo-sports {
         font-size: 1.5em;
     }
 }
 
-footer{
+footer {
     background-color: cadetblue;
     width: 100%;
     border: solid 3px black;
 }
 
-.comtnenedorparam{
+.comtnenedorparam {
     justify-content: space-between;
     flex-direction: row;
     display: flex;

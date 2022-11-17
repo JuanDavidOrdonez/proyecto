@@ -1,25 +1,59 @@
-
-
-.contenedor2{
-    display: grid;
-    grid-template-columns: repeat(3, 35%);
-    grid-template-rows: repeat(4, 70vh);
-    line-height: 40px;
-    justify-content: end;
+main section div h2 {
+    flex-direction: row;
 }
 
-.section-quejas{
-    background-color: aqua;
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 99vh;
     width: 100%;
+    background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
 }
 
-footer{
+.quejas {
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    background-color: rgba(79, 132, 133);
+    font-family: Georgia, serif;
+}
+
+.boton {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px;
+    border-radius: 15px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+
+    .boton:hover {
+        background: #1C6EA4;
+    }
+
+    .boton:active {
+        background: #144E75;
+    }
+}
+
+footer {
     background-color: cadetblue;
     width: 100%;
     border: solid 3px black;
 }
 
-.comtnenedorparam{
+.comtnenedorparam {
     justify-content: space-between;
     flex-direction: row;
     display: flex;

@@ -1,5 +1,34 @@
 /* sports */
 
+.contenedor-sports{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
+
+}
+
+.caja-sports{
+    width: 500px;
+    height: 380px;;
+    background-color: $color-primario;
+    border: solid 3px black;
+    align-content: stretch;
+    box-shadow: $sombra;
+}
+
+.caja2-sports{
+    width: 500px;
+    height: 380px;;
+    background-color: $color-primario;
+    border: solid 3px black;
+    align-content: stretch;
+    box-shadow: $sombra;
+}
+
 @media(min-width: 375px){
     .titulo-sports{
         font-size: 1.5em;
