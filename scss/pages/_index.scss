@@ -1,4 +1,4 @@
-.contenedor{
+.contenedor {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@
     background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
 }
 
-.indextext{
+.indextext {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.875);
     width: 100%;
@@ -18,7 +18,7 @@
     background-color: rgba(255, 255, 255, 0.333);
 }
 
-.caja-section{
+.caja-section {
     width: 400px;
     height: 350px;
     background-color: rgb(3, 146, 255);
@@ -29,19 +29,19 @@
     justify-content: space-around;
 }
 
-.padre{
+.padre {
     display: flex;
     background-color: bisque;
     gap: 2px;
 }
 
-@media(min-width: 375px) and (max-width: 500px){
-    .padre{
+@media(min-width: 375px) and (max-width: 500px) {
+    .padre {
         gap: 5px;
     }
 }
 
-header{
+header {
     background-color: rgb(55, 129, 175);
 
     border: solid 3px black;
@@ -51,7 +51,7 @@ header{
     z-index: 1;
 }
 
-.caja-section2{
+.caja-section2 {
     width: 400px;
     height: 350px;
     background-color: aqua;
@@ -62,7 +62,7 @@ header{
     justify-content: space-around;
 }
 
-.caja-section3{
+.caja-section3 {
     width: 400px;
     height: 350px;
     background-color: aqua;
@@ -70,10 +70,10 @@ header{
     background-image: url(../img/index3.jpg);
     background-position: center;
     background-size: cover;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
-.titulo{
+.titulo {
     font-size: 2em;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -81,7 +81,7 @@ header{
     background-color: rgb(128, 128, 128);
 }
 
-.titulo2{
+.titulo2 {
     font-size: 2em;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -89,7 +89,7 @@ header{
     background-color: rgba(61, 182, 0, 0.836);
 }
 
-.titulo3{
+.titulo3 {
     font-size: 2em;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -97,12 +97,12 @@ header{
     background-color: rgba(230, 0, 251, 0.833);
 }
 
-h1{
+h1 {
     font-size: 4em;
 }
 
-@media(min-width: 375px) and (max-width:1200px){
-    .contenedor{
+@media(min-width: 375px) and (max-width:1200px) {
+    .contenedor {
         display: flex;
         height: auto;
         flex-direction: column;
@@ -113,51 +113,52 @@ h1{
         justify-content: space-around;
         background: linear-gradient(rgb(79, 132, 133), rgb(97, 0, 97));
     }
-    .caja-section{
+
+    .caja-section {
         width: 300px;
         height: 300px;
     }
 
-    .caja-section2{
+    .caja-section2 {
         width: 300px;
         height: 300px;
     }
 
-    .caja-section3{
+    .caja-section3 {
         width: 300px;
         height: 300px;
     }
 
-    header{
+    header {
         text-align: center;
         font-size: 1em;
     }
 
-    .titulo{
+    .titulo {
         font-size: 1.5em;
     }
 
-    .titulo2{
+    .titulo2 {
         font-size: 1.5em;
     }
 
-    .titulo3{
+    .titulo3 {
         font-size: 1.5em;
     }
 
-    .indextext{
+    .indextext {
         font-size: 1.5rem;
     }
 }
 
-footer{
+footer {
     background-color: cadetblue;
     width: 100%;
     border: solid 3px black;
     /* background-image: url(../img/footer.jpg); */
 }
 
-.comtnenedorparam{
+.comtnenedorparam {
     justify-content: space-between;
     flex-direction: row;
     display: flex;

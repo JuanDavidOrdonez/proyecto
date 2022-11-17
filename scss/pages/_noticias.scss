@@ -1,7 +1,7 @@
 .caja{
     width: 400px;
     height: 300px;;
-    background-color: red;
+    background-color: $color-primario;
     border: solid 3px black;
     align-content: stretch;
 }
@@ -9,14 +9,14 @@
 .caja2{
     width: 400px;
     height: 300px;;
-    background-color: rgb(255, 123, 0);
+    background-color: $color-primario;
     border: solid 3px black;
 }
 
 .caja3{
     width: 400px;
     height: 300px;;
-    background-color: rgb(43, 255, 0);
+    background-color: $color-primario;
     border: solid 3px black;
 }
 
@@ -97,7 +97,6 @@ footer{
     background-color: cadetblue;
     width: 100%;
     border: solid 3px black;
-    /* background-image: url(../img/footer.jpg); */
 }
 
 .comtnenedorparam{

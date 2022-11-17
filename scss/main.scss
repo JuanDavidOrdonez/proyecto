@@ -1,8 +1,12 @@
+@import "./utils/variable";
+@import "./utils/mixin";
+
+@import "./base/base";
+
+
+
 @import "./pages/index";
 @import "./pages/juegos";
 @import "./pages/noticias";
 @import "./pages/Sports";
 @import "./pages/quejas";
-@import "./base/base";
-@import "./utils/variable";
-@import "./utils/mixin";

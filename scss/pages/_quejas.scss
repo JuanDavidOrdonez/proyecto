@@ -1,15 +1,11 @@
-main section div h2{
-    flex-direction: row;
-}
+
 
 .contenedor2{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: darkslateblue;
-    height: 100vh;
-    width: 100%;
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-template-rows: repeat(4, 70vh);
+    line-height: 40px;
+    justify-content: end;
 }
 
 .section-quejas{
@@ -21,7 +17,6 @@ footer{
     background-color: cadetblue;
     width: 100%;
     border: solid 3px black;
-    /* background-image: url(../img/footer.jpg); */
 }
 
 .comtnenedorparam{
